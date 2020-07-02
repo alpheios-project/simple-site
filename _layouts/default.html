@@ -17,6 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alpheios-components@3.2.1-dev.5/dist/style/style-components.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanssyriaceastern.css"/>
@@ -47,7 +48,7 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <h5 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h5>
+      <h1>{{ page.title | default: site.title }}</h1>
     </header>
 
     <main id="content" class="main-content" role="main">
