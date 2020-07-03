@@ -13,8 +13,8 @@ $blockquote-text-color: #0E2233;
 $code-bg-color: #E6E6E6;
 $code-text-color: #0E2233;
 
-$border-color: #0E2233;
-$table-border-color: #0E2233;
+$border-color: #757575;
+$table-border-color: #757575;
 $hr-border-color: #757575;
 
 
@@ -58,6 +58,11 @@ a:hover {
   color: #fff;
   background-color: #0E2233;
   background-image: linear-gradient(120deg, #0E2233, #185F6D); 
+}
+
+summary:focus {
+  outline: none;
+
 }
 
 

@@ -20,8 +20,8 @@
 
         window.AlpheiosEmbed.importDependencies({mode: 'cdn'}).then(Embedded => {
           new Embedded(
-            { clientId: "{{ site.clientId }}", 
-              authEnv: null 
+            { clientId: "{{ site.url }}",
+              authEnv: null
             }).activate();
         }).catch(e => {
           console.error(`Import Alpheios Embedded Library dependencies failed: ${e}`)
@@ -34,7 +34,7 @@
 
    </script>
 
-    <header class="page-header" role="banner">
+    <header class="page-header" role="banner" data-alpheios-ignore="all">
       <h1>{{ page.title | default: site.title }}</h1>
     </header>
 

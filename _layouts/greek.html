@@ -20,7 +20,7 @@
 
         window.AlpheiosEmbed.importDependencies({mode: 'cdn'}).then(Embedded => {
           new Embedded(
-            { clientId: "{{ site.clientId }}", 
+            { clientId: "{{ site.url }}", 
               authEnv: null 
             }).activate();
         }).catch(e => {
