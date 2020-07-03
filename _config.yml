@@ -1,3 +1,4 @@
 theme: jekyll-theme-cayman
-title: Alpheios Embedded Library GH Pages Demo
-description: A demonstration using Alpheios embed-lib on a Github pages site.
+title: Alpheios Simple Site
+description: A Template for A Simple Website with Alpheios Embedded
+clientId: alpheios-simple-site
