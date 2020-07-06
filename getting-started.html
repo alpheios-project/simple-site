@@ -64,11 +64,13 @@ title: Getting Started
       <li>Make sure the option <code>Commit directly to the master
           branch</code> is selected
       </li>
+      <li>Click the Green <code style="color:white; background-color:green;">Commit changes</code> button.
       <li>At this point, your GitHub web page should be published and updated at
         https://(youraccountname).github.io/(yoursitename). For example, if your
         account name is "janedoe" and your site name is "my-latin-site" the site
-        will be published at https://janedoe.github.io/my-latin-site . At this point
-        it will contain the same contents as the template.
+        will be published at https://janedoe.github.io/my-latin-site . As we have not yet made any
+        changes to the content, it will contain the exact same contents as the template. (<b>Note:</b> it may
+        take a minute or two for the page to update.)
       </li>
     </ol>
   </li>
@@ -91,7 +93,9 @@ title: Getting Started
       <li>Make sure the option <code>Commit directly to the master
           branch</code> is selected
       </li>
-      <li>Your GitHub web page should be published and updated</li>
+      <li>Click the Green <code style="color:white; background-color:green;">Commit changes</code> button.
+      <li>Your GitHub web page should be published and updated.  (<b>Note:</b> it may
+        take a minute or two for the page to update.)</li>
     </ol>
   </li>
   <li>Enable Text For Alpheios
@@ -146,6 +150,15 @@ vī superum saevae memorem Iūnōnis ob īram<br>
     </ol>
   </li>
 
+  <li><p>Add new files to your site by using the "Add File" button when on the
+    <code>code</code> tab. You can create a new file or upload a file from
+    your local file system.</p>
+    <p>Make sure to use only HTML fragments for your files. The page contents
+    following the metadata section should be marked up as
+    HTML fragments. They will be inserted automatically in the <code>body</code>
+    element of the page. <b>Do not use full HTML files.</b></p>
+  </li>
+
   <li>
     <p>Update the descriptive metadata for your page.</p>
     <p>Metadata fields are set at the top of the page in the metadata
@@ -157,8 +170,11 @@ vī superum saevae memorem Iūnōnis ob īram<br>
     and reading text in Latin). Otherwise set it to the language of your text
     (<code>latin</code>, <code>greek</code>, <code>arabic</code> or
     <code>persian</code>) as described above.<code>title</code> should be set to
-    whatever you want your page title to be. See the <em>Example Mixed Text
-    Page File Contents</em> below:</p>
+      whatever you want your page title to be. </p>
+    <p><b>NOTE:</b> It is very important that you have a single space after the colon that
+      separates the metadata field name from the field contents. Otherwise the site will fail
+      to build correction.</p>
+    <p>See the <em>Example Mixed Text Page File Contents</em> below:</p>
 
     <p>
      <textarea rows="11" cols="75">
@@ -178,18 +194,22 @@ vī superum saevae memorem Iūnōnis ob īram<br>
 </p>
       </textarea>
   </p>
+</li>
 
-  </li>
-  <li><p>Add new files to your site by using the "Add File" button when on the
-    <code>code</code> tab. You can create a new file or upload a file from
-    your local file system.</p>
-    <p>Make sure to use only HTML fragments for your files. The page contents
-    following the metadata section should be marked up as
-    HTML fragments. They will be inserted automatically in the <code>body</code>
-    element of the page. <b>Do not use full HTML files.</b></p>
-  </li>
 </ol>
 
+<h2>Troubleshooting</h2>
+
+<p>If your changes to a page fail to appear in the published site, check to see if the commit succeeded by doing the following:</p>
+
+<ol>
+  <li>Click on the <code>Code</code> tab and look to see if the last commit listed at the top of the directory listing 
+    has a green <span style="color:green;">&#10003;</span> next to it. If instead it has a red <span style="color:red;"> it means
+    that it failed. A common cause is invalid metadata field specification (e.g. a missing space).</li>
+  <li>You can also check the history of your GitHub Pages build. Click on the <code>Code</code> tab, and on the right side of the page
+    you will see a section entitled <code>Environments</code>. Click the <code>github-pages</code> link and you'll see the history of the 
+    page deployments.</li>
+</ol>
 
 
 
